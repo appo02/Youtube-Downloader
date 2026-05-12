@@ -17,3 +17,5 @@ installer_tmp.iss
 
 # Distribution
 dist/
+gh.zip
+gh_tmp/
