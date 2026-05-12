@@ -1,5 +1,7 @@
 # ARI's Youtube Songs Downloader
 
+Built with love for my son ARI, who wants to download his favourite songs onto his Kids Camera. 🎵📷
+
 A standalone video/audio downloader with a dark-themed GUI.  
 Paste links, click download — that's it.
 
@@ -9,7 +11,7 @@ Paste links, click download — that's it.
 
 **No Python, no setup, no admin rights needed.**
 
-👉 **[Download Setup_ARIs_Downloader.exe](https://github.com/appo02/Youtube-Downloader/releases/latest/download/Setup_ARIs_Downloader.exe)**
+👉 **[Download Setup_ARIs_Downloader.exe](https://github.com/appo02/Youtube-Downloader/blob/main/Standalone%20Installer/Setup_ARIs_Downloader.exe)** (click "Download raw file" on the page)
 
 Just run the installer, pick a folder, click Install — done.  
 Everything is bundled inside (app + yt-dlp + ffmpeg + Python runtime).
@@ -19,7 +21,7 @@ Everything is bundled inside (app + yt-dlp + ffmpeg + Python runtime).
 ## Features
 
 - Separate input fields for each link (add as many as you want)
-- **Audio only (MP3)** toggle
+- **Audio only (MP3)** toggle — perfect for loading songs onto a kids camera
 - **Download full playlists** toggle
 - Per-download status with error codes and expandable details
 - Bundled `yt-dlp` + `ffmpeg` — no extra installs for end users
@@ -31,18 +33,14 @@ Everything is bundled inside (app + yt-dlp + ffmpeg + Python runtime).
 
 ```
 downloader_app/
-├── app.py               ← main GUI application
+├── app.py                ← main GUI application
 ├── setup_gui.py          ← installer GUI (self-extracting)
 ├── generate_icon.py      ← generates the ARI icon (.ico)
 ├── build_installer.bat   ← one-click: builds everything into an installer
-├── build.bat             ← builds only the app .exe (no installer)
-├── installer.iss         ← legacy Inno Setup script (not required)
-└── installer/
-    ├── icon.ico          ← generated app icon
-    ├── app/              ← staging folder (created during build)
-    ├── app.zip           ← zipped bundle (created during build)
-    └── output/
-        └── Setup_ARIs_Downloader.exe  ← final installer
+├── installer/
+│   └── icon.ico          ← generated app icon
+└── Standalone Installer/
+    └── Setup_ARIs_Downloader.exe  ← ready-to-use installer
 ```
 
 ---
@@ -104,13 +102,15 @@ This requires `yt-dlp` on your PATH.
 
 ## How to Distribute
 
-Send **only this one file** to your friend:
+Send **only this one file** to anyone:
 
 ```
-installer\output\Setup_ARIs_Downloader.exe
+Standalone Installer\Setup_ARIs_Downloader.exe
 ```
 
-### What your friend does
+Or point them to the [download link](https://github.com/appo02/Youtube-Downloader/blob/main/Standalone%20Installer/Setup_ARIs_Downloader.exe) on this repo.
+
+### What the recipient does
 
 1. Double-click `Setup_ARIs_Downloader.exe`
 2. Pick an install folder (defaults to `~/ARIs Youtube Songs Downloader`)
