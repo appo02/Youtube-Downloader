@@ -5,6 +5,17 @@ Paste links, click download — that's it.
 
 ---
 
+## Download (Ready-to-Use Installer)
+
+**No Python, no setup, no admin rights needed.**
+
+👉 **[Download Setup_ARIs_Downloader.exe](https://github.com/appo02/Youtube-Downloader/releases/latest/download/Setup_ARIs_Downloader.exe)**
+
+Just run the installer, pick a folder, click Install — done.  
+Everything is bundled inside (app + yt-dlp + ffmpeg + Python runtime).
+
+---
+
 ## Features
 
 - Separate input fields for each link (add as many as you want)
