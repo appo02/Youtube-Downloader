@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# PyInstaller working files
+build/
+*.spec
+
+# Installer staging (large binaries)
+installer/app/
+installer/output/
+installer/app.zip
+installer/_ffmpeg_tmp/
+installer/ffmpeg.zip
+installer_tmp.iss
+
+# Distribution
+dist/
